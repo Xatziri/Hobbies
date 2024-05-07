@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <script src="https://cdn.tailwindcss.com"></script>
 
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&display=swap");
@@ -37,17 +37,16 @@ h2 {
     height: 100%;
     transition: 0.6s;
     z-index: 0;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); 
     background-color: linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
     
   }
 
-/*   &:hover {
-    box-shadow: 0.063rem 0.063rem 1.25rem 0.375rem rgb(0 0 0 / 53%);
-  } */
   &:hover {
+    box-shadow: 0.063rem 0.063rem 1.25rem 0.375rem rgb(0 0 0 / 53%);
+  }
+/*   &:hover {
   box-shadow: 0.063rem 0.063rem 1.25rem 0.375rem linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
-}
+} */
 
   &:nth-child(1)::before {
     bottom: 0;
@@ -97,27 +96,31 @@ h2 {
 }
 
 .card:nth-child(1) .circle {
-  background: url("assets/images/hiking1.png") no-repeat 50% 50% / cover !important;
+  background: url("https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat 50% 50% / cover;
   bottom: 0;
   right: 0;
   clip-path: circle(calc(6.25rem + 7.5vw) at 100% 100%);
 }
 
 .card:nth-child(2) .circle {
-  background: url("assets/images/concert.jpg") no-repeat 50% 50% / cover !important;
+  background: url("https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat 50% 50% / cover;
   bottom: 0;
   left: 0;
   clip-path: circle(calc(6.25rem + 7.5vw) at 0% 100%);
 }
 .card:nth-child(3) .circle {
-  background: url(""assets/images/Plantstand.jpg"") no-repeat 50% 50% / cover !important;
+  background: url("https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat 50% 50% / cover;
   top: 0;
   right: 0;
   clip-path: circle(calc(6.25rem + 7.5vw) at 100% 0%);
 }
 
 .card:nth-child(4) .circle {
-  background: url("assets/images/BookWorm.png") no-repeat 50% 50% / cover !important;
+  background: url("https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat 50% 50% / cover;
   top: 0;
   left: 0;
   clip-path: circle(calc(6.25rem + 7.5vw) at 0% 0%);
